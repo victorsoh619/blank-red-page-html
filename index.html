@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <style type="text/css">
+            .loading1 {
+                display: block;
+                margin-bottom: 200px;
+                margin-left: 200px;
+                margin-right: 200px;
+                margin-top: 300px;
+            }
+            div.appear {
+                width: 350px;
+                border: #bdbdbd 5px solid;
+                background: #0080ff;
+                position: relative;
+                color: white;
+                top: -5px;
+                left: 15px;
+                display: none;
+                padding: 5px 5px 5px 5px;
+                z-index: 1000000;
+            }
+            div.hover {
+                cursor: pointer;
+                width: 5px;
+            }
+            div.hover:hover div.appear {
+                display: block;
+            }
+        </style>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Welcome to Red Screen</title>
+
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/grid1200.css" rel="stylesheet" type="text/css" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body style="background-color: black;" topmargin="0" leftmargin="0" rightmargin="0" onload="alertMsg(''), document.loginForm.userID.focus();">
+        <div class="page-wrap">
+            <div id="login" style="top: 25%;">
+                <div class="form clearfix">
+                    <h2 class="MB10">sign in</h2>
+                    <form method="post" action="/PSSTServ/ContentManager" name="loginForm">
+                    <a href="#" class="forgot">Change password</a> -->
+                        <table>
+                            <tr>
+                                <td style="color: #ffffff;">Agent ID</td>
+                                <td class="form-item"><input name="userID" type="text" class="textbox" placeholder="Agent ID" value="010101-10-1234" readonly="readonly" /></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td style="color: #ffffff;">Password</td>
+                                <td class="form-item"><input name="password" type="password" class="textbox" placeholder="Password" autocomplete="off" /></td>
+                                <td style="vertical-align: middle;"></td>
+                            </tr>
+                        </table>
+                        <br></br>
+                        <a href="https://victorsoh619.github.io/sample-html.github.io/">
+                            <input name="" type="button" class="btn fleft" value="Login" />
+                        </a>
+
+                        <a href="#" class="forgot">Forgot password</a>
+                        <a href="#" class="forgot">Change password</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
